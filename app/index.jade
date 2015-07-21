@@ -1,0 +1,13 @@
+Body
+  h1 {{ #root._page.hello }} !!
+  view(is='foo')
+  view(is='Topbar')
+
+foo
+  if #root._page.foo === 'Second'
+    a(href='/pong') Go to PONG
+  else
+    a(href='/ping') Go to ping
+    
+hello
+  p World    
